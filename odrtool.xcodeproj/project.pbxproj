@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E2169FEA24D0787D00515493 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = E2169FE524D0787D00515493 /* ArgumentParser */; };
+		E2169FEB24D0787D00515493 /* PathKit in Frameworks */ = {isa = PBXBuildFile; productRef = E2169FE324D0787D00515493 /* PathKit */; };
+		E2169FEC24D0787D00515493 /* XcodeProj in Frameworks */ = {isa = PBXBuildFile; productRef = E2169FE124D0787D00515493 /* XcodeProj */; };
+		E2C6D56624D07A10000B0CD9 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6D56524D07A10000B0CD9 /* main.swift */; };
+		E2C6D56824D0841F000B0CD9 /* ODRTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6D56724D0841F000B0CD9 /* ODRTool.swift */; };
+		E2C6D56A24D087DB000B0CD9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C6D56924D087DB000B0CD9 /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E2169FED24D0787D00515493 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E2169FF124D0787D00515493 /* odrtool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = odrtool; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C6D56524D07A10000B0CD9 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E2C6D56724D0841F000B0CD9 /* ODRTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODRTool.swift; sourceTree = "<group>"; };
+		E2C6D56924D087DB000B0CD9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2169FE924D0787D00515493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2169FEA24D0787D00515493 /* ArgumentParser in Frameworks */,
+				E2169FEB24D0787D00515493 /* PathKit in Frameworks */,
+				E2169FEC24D0787D00515493 /* XcodeProj in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E2C8DE5524CED5D600749FA6 = {
+			isa = PBXGroup;
+			children = (
+				E2C8DE6024CED5D600749FA6 /* Sources */,
+				E2C8DE5F24CED5D600749FA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2C8DE5F24CED5D600749FA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2169FF124D0787D00515493 /* odrtool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2C8DE6024CED5D600749FA6 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E2C6D56524D07A10000B0CD9 /* main.swift */,
+				E2C6D56724D0841F000B0CD9 /* ODRTool.swift */,
+				E2C6D56924D087DB000B0CD9 /* Utils.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2169FE024D0787D00515493 /* odrtool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2169FEE24D0787D00515493 /* Build configuration list for PBXNativeTarget "odrtool" */;
+			buildPhases = (
+				E2169FE724D0787D00515493 /* Sources */,
+				E2169FE924D0787D00515493 /* Frameworks */,
+				E2169FED24D0787D00515493 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = odrtool;
+			packageProductDependencies = (
+				E2169FE124D0787D00515493 /* XcodeProj */,
+				E2169FE324D0787D00515493 /* PathKit */,
+				E2169FE524D0787D00515493 /* ArgumentParser */,
+			);
+			productName = "odr-scripts";
+			productReference = E2169FF124D0787D00515493 /* odrtool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2C8DE5624CED5D600749FA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Jonathan Kilzi";
+			};
+			buildConfigurationList = E2C8DE5924CED5D600749FA6 /* Build configuration list for PBXProject "odrtool" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2C8DE5524CED5D600749FA6;
+			packageReferences = (
+				E2C8DE6824CED66000749FA6 /* XCRemoteSwiftPackageReference "xcodeproj" */,
+				E2169FD824D0684400515493 /* XCRemoteSwiftPackageReference "PathKit" */,
+				E2169FDD24D077A200515493 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
+			productRefGroup = E2C8DE5F24CED5D600749FA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2169FE024D0787D00515493 /* odrtool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2169FE724D0787D00515493 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2C6D56824D0841F000B0CD9 /* ODRTool.swift in Sources */,
+				E2C6D56624D07A10000B0CD9 /* main.swift in Sources */,
+				E2C6D56A24D087DB000B0CD9 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E2169FEF24D0787D00515493 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E2169FF024D0787D00515493 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E2C8DE6324CED5D600749FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2C8DE6424CED5D600749FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2169FEE24D0787D00515493 /* Build configuration list for PBXNativeTarget "odrtool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2169FEF24D0787D00515493 /* Debug */,
+				E2169FF024D0787D00515493 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2C8DE5924CED5D600749FA6 /* Build configuration list for PBXProject "odrtool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2C8DE6324CED5D600749FA6 /* Debug */,
+				E2C8DE6424CED5D600749FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E2169FD824D0684400515493 /* XCRemoteSwiftPackageReference "PathKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylef/PathKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E2169FDD24D077A200515493 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		E2169FE224D0787D00515493 /* XCRemoteSwiftPackageReference "xcodeproj" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tuist/xcodeproj.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.14.0;
+			};
+		};
+		E2169FE424D0787D00515493 /* XCRemoteSwiftPackageReference "PathKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kylef/PathKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		E2169FE624D0787D00515493 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		E2C8DE6824CED66000749FA6 /* XCRemoteSwiftPackageReference "xcodeproj" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tuist/xcodeproj.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E2169FE124D0787D00515493 /* XcodeProj */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2169FE224D0787D00515493 /* XCRemoteSwiftPackageReference "xcodeproj" */;
+			productName = XcodeProj;
+		};
+		E2169FE324D0787D00515493 /* PathKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2169FE424D0787D00515493 /* XCRemoteSwiftPackageReference "PathKit" */;
+			productName = PathKit;
+		};
+		E2169FE524D0787D00515493 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E2169FE624D0787D00515493 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E2C8DE5624CED5D600749FA6 /* Project object */;
+}
