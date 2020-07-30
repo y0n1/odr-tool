@@ -30,14 +30,21 @@ struct ODRTool: ParsableCommand {
     
     @Option(
         name: NameSpecification.shortAndLong,
-        help: "The resource's name to be tagged; the generated tag will carry this value"
+        help: "The resource's name to be tagged"
     )
     var resourceName: String;
     
-    fileprivate func addResourceTags(pbxproj: PBXProj) throws -> Void  {
+    @Option(
+        name: NameSpecification.shortAndLong,
+        help: "The tag value for the given resource. If this value is not used the resource will use its own name as the tag value"
+    )
+    var tagName: String?;
+    
+    func addResourceTags(pbxproj: PBXProj) throws -> Void  {
         let ASSET_TAGS = "ASSET_TAGS"
         let KNOWN_ASSET_TAGS = "KnownAssetTags"
         let RESOURCE_NAME = self._resourceName.wrappedValue
+        let TAG_NAME = self._tagName.wrappedValue
         let fileReferences = Utils.findFileReferencesBy(path: RESOURCE_NAME, pbxproj)
         
         for fileRef in fileReferences {
@@ -45,8 +52,8 @@ struct ODRTool: ParsableCommand {
             
             for buildFile in buildFiles {
                 buildFile.settings = buildFile.settings ?? Dictionary<String, Any>()
-                let assetTags = (buildFile.settings?[ASSET_TAGS] as? [String]) ?? []
-                buildFile.settings?.updateValue([RESOURCE_NAME] + assetTags, forKey: ASSET_TAGS)
+                let currentAssetTags = (buildFile.settings?[ASSET_TAGS] as? [String]) ?? []
+                buildFile.settings?.updateValue([TAG_NAME ?? RESOURCE_NAME] + currentAssetTags, forKey: ASSET_TAGS)
                 let resourcesBuildPhases = Utils.findResourcesBuildPhasesBy(buildFile, pbxproj)
                 
                 for resourcesBuildPhase in resourcesBuildPhases {
@@ -59,7 +66,7 @@ struct ODRTool: ParsableCommand {
                         
                         for project in projects {
                             let knownAssetTags = (project.attributes[KNOWN_ASSET_TAGS] as? [String]) ?? []
-                            project.attributes.updateValue([RESOURCE_NAME] + knownAssetTags, forKey: KNOWN_ASSET_TAGS)
+                            project.attributes.updateValue([TAG_NAME ?? RESOURCE_NAME] + knownAssetTags, forKey: KNOWN_ASSET_TAGS)
                         }
                     }
                 }
